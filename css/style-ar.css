@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    html, body { height: 100%; }
+    body { margin: 0; font-family: 'Raleway', sans-serif; overflow: none;}
+    .button {
+          padding: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 12px;
+          margin: 4px 2px;
+          background: white;
+          border-radius: 50%;
+          height: 70px;
+          width: 70px;
+        }
+
+    #output {
+      display: inline-block;
+      top: 4px;
+      position: relative;
+      border: dotted 1px #ccc;
+      padding: 2px;
+    }
+
+    .button {
+      border: solid 2px #ccc;
+    }
+
+    .menu2 {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      height: 80px;
+      background-color: black;
+      z-index: 100;
+    }
+    .logo2 {
+      z-index: 100;
+      top: 0px;
+      width: 100px;
+      margin: 0px;
+      margin-top: -30px;
+      display: inline-block;
+    }
+    .navigation {
+      width: 100%;
+      list-style: none;
+      text-align: center;
+      height: 20px;
+      line-height: 20px;
+      display: inline-block;
+    }
+
+    .box {
+      width: 280px;
+      height: 90px;
+      position: center;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 35px;
+    }
+   
+    .box2 {
+      width: 280px;
+      height: 75px;
+      position: center;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 35px;
+    }
+    .white {
+      background: white;
+    }
+    p {
+      margin: 0.5px 0;
+    }
+
+    .fle {
+      width: 80px;
+      height: 70px;
+    }
+    .start {
+      width: 40px;
+      height: 40px;
+    }
+    .two {
+      position: absolute;
+      width: 3%;
+      height: 2.5%;
+      top: 4.8%;
+      left: 40%;
+      opacity: 0.2;
+    }
+    .start1 {
+      position: absolute;
+      width: 4%;
+      height: 3.7%;
+      top: 4.4%;
+      left: 27%;
+    }
+    .textp {
+      position: absolute;
+
+      top: 25px;
+      width: 200px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 60px;
+      border-style: none;
+    }
+    .box3 {
+      width: 100%;
+      height: 60px;
+    }
+    .texd {
+      font-size: 16px;
+      margin: 1px;
+      text-align: justify;
+      font-family: "Lato";
+    }
+    .div-s{
+     position: fixed; 
+     bottom: 0; 
+     right: 0; 
+     left: 0%;
+     top: 0%;
+     width: 100%;
+     text-align: center;
+     z-index: 1;
+    }
+    .div-s-r{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0%;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+    }
+    .div-s-r-1{
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0%;
+      top: 84%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+    .img-s{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: 84%;
+        width: 35%;
+        text-align: center;
+        z-index: 1;
+    }
+    .img-s-1{
+      position: fixed;
+      right: 8%;
+      top: 86.5%;
+      width: 10%;
+      text-align: center;
+      z-index: 1;
+    }
+    .swiper-slide{
+        width: 50px;
+       height: 50px;
+       background: ;
+       border-radius: 50%;
+       behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+       display: inline-block;
+    }
+    .img {
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        border: 1px groove;
+   }
+   .i-cl{
+    font-size: 85%; position: center; text-align: center;
+   }
+ .p-s-1{
+  font-family: Alatsi; 
+  font-size: 16px;
+ }
+ .p-s-2{
+  margin: 1px; opacity: 0.6;
+ }

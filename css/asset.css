@@ -1,0 +1,147 @@
+.button {
+ 
+  text-align: center;
+  text-decoration: none;
+  
+  font-size: 12px;
+ padding: 0;
+border: none;
+background: none;
+ 
+  height: 50px;
+  width: 50px;
+  
+}
+
+#output {
+  display: inline-block;
+  top: 4px;
+  position: relative;
+  border: dotted 1px #ccc;
+  padding: 2px;
+}
+
+
+
+.white {
+  background: white;
+}
+p {
+  margin: 0.5px 0;
+}
+
+.box3 {
+  width: 100%;
+  height: 55px;
+}
+.rounded-circle{
+    border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+/*Backgrounds*/
+/*Backgrounds Casa vieja*/
+.bc-0 {
+  background-image: url(/app/app/casavieja/comida1.png);
+}
+.bc-1 {
+  background-image: url(/app/app/casavieja/comida2.png);
+}
+.bc-2 {
+  background-image: url(/app/app/casavieja/comida3.png);
+}
+.bc-3 {
+  background-image: url(/app/app/casavieja/comida4.png);
+}
+.bc-4 {
+  background-image: url(/app/app/casavieja/comida5.png);
+}
+.bc-5 {
+  background-image: url(/app/app/casavieja/comida6.png);
+}
+.bc-6 {
+  background-image: url(/app/app/casavieja/comida7.png);
+}
+/*Backgrounds Pipiritacos*/
+.bp-0 {
+  background-image: url(/app/app/pipiritacos/dish1.png);
+}
+.bp-1 {
+  background-image: url(/app/app/pipiritacos/dish2.png);
+}
+.bp-2 {
+  background-image: url(/app/app/pipiritacos/dish3.png);
+}
+.bp-3 {
+  background-image: url(/app/app/pipiritacos/dish4.png);
+}
+.bp-4 {
+  background-image: url(/app/app/pipiritacos/dish5.png);
+}
+.bp-5 {
+  background-image: url(/app/app/pipiritacos/dish6.png);
+}
+.bp-6 {
+  background-image: url(/app/app/pipiritacos/dish7.png);
+}
+.bp-7 {
+  background-image: url(/app/app/pipiritacos/dish8.png);
+}
+.bp-8 {
+  background-image: url(/app/app/pipiritacos/dish9.png);
+}
+.bp-9 {
+  background-image: url(/app/app/pipiritacos/dish10.png);
+}
+.bp-10 {
+  background-image: url(/app/app/pipiritacos/dish11.png);
+}
+.bp-11 {
+  background-image: url(/app/app/pipiritacos/dish12.png);
+}
+.bp-12 {
+  background-image: url(/app/app/pipiritacos/dish13.png);
+  
+}
+.bp-13 {
+  background-image: url(/app/app/pipiritacos/dish14.png);
+  
+}
+.bp-14 {
+  background-image: url(/app/app/pipiritacos/dish15.png);
+}
+.bp-15 {
+  background-image: url(/app/app/pipiritacos/dish16.png);
+}
+.bp-16 {
+  background-image: url(/app/app/pipiritacos/dish17.png);
+}
+.bp-17 {
+  background-image: url(/app/app/pipiritacos/dish18.png);
+}
+.bp-18 {
+  background-image: url(/app/app/pipiritacos/dish19.png);
+}
+.bp-19 {
+  background-image: url(/app/app/pipiritacos/dish20.png);
+}
+.bp-20 {
+  background-image: url(/app/app/pipiritacos/dish21.png);
+}
+.bp-21 {
+  background-image: url(/app/app/pipiritacos/dish22.png);
+}
+.bp-22 {
+  background-image: url(/app/app/pipiritacos/dish23.png);
+}
+.bp-23 {
+  background-image: url(/app/app/pipiritacos/dish24.png);
+}
+.bp-24 {
+  background-image: url(/app/app/pipiritacos/dish25.png);
+}
+.bp-25 {
+  background-image: url(/app/app/pipiritacos/dish26.png);
+}

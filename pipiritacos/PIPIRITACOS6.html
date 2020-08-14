@@ -1,0 +1,256 @@
+<!-- Autor: AngelMqz-->
+/
+<!--WEB: blackdish.mx -->
+<!-- INFO: Codigo de programacion para implementacion de realidad aumentada web, con A-frame, -->
+<!--  2020 todos los derechos reservados -->
+<html>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Alatsi"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+  <script src="/app/js/aframe.min.js"></script>
+  <script src="/app/js/aframe-ar.js"></script>
+  <script src="/app/js/aframe-extras.loaders.min.js"></script>
+  <script src="/app/js/gsap.min.js"></script>
+  <script src="/app/js/merge-image.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+    rel="stylesheet"
+  />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!--Estilos -->
+  <link rel="stylesheet" type="text/css" href="/app/css/asset.css" />
+  <!-- Fin De Estilos -->
+
+  <!-- Script Mostrar y Ocultar Detalles -->
+
+  <!--Fin Script   -->
+
+  <!--Div Menu SUP -->
+  <div
+    class="box3 white"
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0%;
+      top: 0%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    "
+    
+  >
+      
+      <table><tr><td></td>
+     
+  <td> <a href="https://blackdish.mx/app">  <img class="rounded-circle" src="/app/app/logo3.png" width="60px" height="60px"/></a>
+  </td>
+  <td><p>Pambazo Pastor.</p></td>
+  <td><p>$18.00</p></td>
+</tr></table>
+  </div>
+  
+   
+
+  <!-- Fin Div Menu SUP -->
+  
+  
+  <!-- Div footer -->
+  
+   <div
+    class="box3 white"
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0%;
+      top: 92%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    "
+  ></div>
+  <!--Div fin footer -->
+
+  <!--Div Boton tomar foto -->
+  <div
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 0%;
+      left: 38%;
+      top: 92%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    "
+  >
+   <a href="tel:+522717131142" style="font-size: 60px; " class="button" >
+      <i
+        class="material-icons"
+        style="font-size: 85%; color: black; "
+        >call
+      </i>
+    </a>
+  </div>
+  <!--Div Boton tomar foto Final -->
+  
+  <!--Div menu platillos -->
+  <div
+    style="
+      position: fixed;
+      bottom: 0;
+      right: 35%;
+      
+      top: 90%;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    "
+  >
+    <a href="https://blackdish.mx/app/MENU_PIPIRI.html" style="font-size: 60px; " class="button" >
+      <i
+        class="material-icons"
+        style="font-size: 85%; color:black; "
+        >list
+      </i>
+    </a>
+    
+  </div>
+  <!--Div fin Menu -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <body style="margin: 0px; overflow: hidden; width: 100%;">
+    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">
+      <!--Entidad para texto AR sin tarjet-->
+
+      <a-marker
+        preset="custom"
+        type="pattern"
+        url="/app/app/assets/pattern-frame.patt"
+      >
+        <!--Tarjet para ubicar el platillo -->
+        <!--Imagen a mostrar en AR(modelo) -->
+        <a-entity camera look-controls>
+          <a-image
+            width="4.3"
+            height="2.6"
+            src="/app/app/pipiritacos/dish7.png"
+          ></a-image>
+        </a-entity>
+        <!--Fin Modelo(modelo) -->
+
+        <!--Script Tomar foto -->
+
+        <script>
+          var m = document.querySelector("a-marker");
+          m.addEventListener("markerFound", (e) => {
+            console.log("found");
+            var v = document.querySelector("#mivideo").play();
+          });
+          m.addEventListener("markerLost", (e) => {
+            console.log("lost");
+            var v = document.querySelector("#mivideo").play();
+          });
+
+          function resizeCanvas(origCanvas, width, height) {
+            let resizedCanvas = document.createElement("canvas");
+            let resizedContext = resizedCanvas.getContext("2d");
+
+            resizedCanvas.height = height;
+            resizedCanvas.width = width;
+
+            resizedContext.drawImage(origCanvas, 0, 0, width, height);
+            return resizedCanvas.toDataURL();
+          }
+
+          document
+            .getElementById("snap-button")
+            .addEventListener("click", function () {
+              let aScene = document
+                .querySelector("a-scene")
+                .components.screenshot.getCanvas("perspective");
+              let frame = captureVideoFrame("video", "png");
+              aScene = resizeCanvas(aScene, frame.width, frame.height);
+              frame = frame.dataUri;
+
+              mergeImages([frame, aScene]).then((b64) => {
+                let link = document.getElementById("download-link", "jpeg");
+                link.setAttribute("download", "AR.jpeg");
+                link.setAttribute("href", b64);
+                link.click();
+                console.log("foto tomada");
+              });
+            });
+
+          function captureVideoFrame(video, format, width, height) {
+            if (typeof video === "string") {
+              video = document.querySelector(video);
+            }
+
+            format = format || "jpeg";
+
+            if (!video || (format !== "png" && format !== "jpeg")) {
+              return false;
+            }
+
+            var canvas = document.createElement("CANVAS");
+
+            canvas.width = width || video.videoWidth;
+            canvas.height = height || video.videoHeight;
+            canvas.getContext("2d").drawImage(video, 0, 0);
+            var dataUri = canvas.toDataURL("image/" + format);
+            var data = dataUri.split(",")[1];
+            var mimeType = dataUri.split(";")[0].slice(5);
+
+            var bytes = window.atob(data);
+            var buf = new ArrayBuffer(bytes.length);
+            var arr = new Uint8Array(buf);
+
+            for (var i = 0; i < bytes.length; i++) {
+              arr[i] = bytes.charCodeAt(i);
+            }
+
+            var blob = new Blob([arr], { type: mimeType });
+            return {
+              blob: blob,
+              dataUri: dataUri,
+              format: format,
+              width: canvas.width,
+              height: canvas.height,
+            };
+          }
+        </script>
+        <!--Fin Script tomar foto -->
+      </a-marker>
+      <!-- Fin marker-->
+      <a-entity camera></a-entity>
+      <!--Se inicializa la entidad con el el atributo camara que muestra el modelo solo cuando ve el tarjet, si no aparece el tarjet el modelo no aparece. -->
+    </a-scene>
+    <!--Fin de toda la escena AR -->
+  </body>
+  <!--Fin Script tomar foto -->
+</html>

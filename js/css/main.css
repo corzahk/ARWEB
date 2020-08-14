@@ -1,0 +1,281 @@
+#icon_prefix{
+  color: #FFFFFF;
+}
+
+#icon_telephone{
+  color: #FFFFFF;
+}
+
+#icon{
+  color: #FFFFFF;
+}
+.card{
+width: 100%; height: auto;
+}
+.back_tarjeta{
+  -webkit-box-shadow: 0 8px 8px -2px black;
+  background-image: url("../img/tarjetas.jpg");
+  background-size: 100%;
+  height: 150px;
+  width: 100%;
+  border: 2px;
+  border-radius: 8px;
+}
+.back_pago{
+  -webkit-box-shadow: 0 8px 8px -2px black;
+  background-image: url("../img/terminal.jpg");
+  background-size: 100%;
+  height: 150px;
+  width: 100%;
+  border: 2px;
+  border-radius: 8px;
+}
+.background-app{
+  background-image: url("../img/main.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
+.fullscreenbanner{
+  width: 100%;
+  margin-top: -6vh;
+}
+
+.card .card-image img.banner{
+  height:100vh !important;
+}
+
+.fullscreentext{
+  text-align: center !important;
+  font-size: 5em !important;
+  z-index: 100000;
+  padding: 0px !important;
+}
+
+
+#promo-pic{
+  width: 70px !important;
+  height: 70px !important;
+  display: inline-flex;
+  border-radius: 50%;
+  border: ridge rgb(240, 214, 149);
+
+}
+
+.blurImg{
+  filter: blur(2px);
+ -webkit-filter: blur(2px);
+}
+
+/* Style the links inside the pill navigation menu */
+.pill-nav a {
+  margin-right: 5%;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  color: #FFCD00;
+}
+
+.dropdown-content{
+  width: 250px !important;
+}
+
+.pill-footer{
+  position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 1030;
+    background: #FFFFFF;
+}
+
+.row{
+  margin-bottom: 50px !important;
+}
+
+.circle{
+  width: 60px !important;
+  height: 60px !important;
+  left: 6px !important;
+}
+
+#profile-pic{
+  width: 130px;
+  height: 130px;
+}
+
+.card.rest{
+  border-top-left-radius: 30% !important;
+  border-top-right-radius: 30% !important;
+  box-shadow: 0px !important;
+}
+
+.center-top{
+  margin-left: 40% !important;
+}
+
+.top-navbar{
+  background: #F3F3F3;
+}
+
+#points{
+  text-align: center;
+    font-size: 50px;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    color: #E8D61B;
+}
+
+.pill-modal{
+  text-align: center;
+  font-size: 26px;
+  height: 50px;
+  width: 100%;
+  border-radius: 20px !important;
+  background: green;
+}
+
+.fixed-action-btn {
+  margin-bottom: 30px !important;
+}
+
+
+
+
+.hs {/*
+
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-rows: minmax(150px, 1fr);
+
+  grid-auto-columns: calc(50% - var(--gutter) * 2);
+display: grid;
+
+scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+  */
+  display: inline-flex;
+  overflow-x: scroll;
+  width: 100%;
+  height: 100px;
+  grid-auto-flow: column;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.promo{
+  height: 70px !important;
+  width: 70px !important;
+  margin-right: 5em;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .promo{
+    height: 80px !important;
+    width:  p;
+    margin-right: 4em;
+    display: inline-block;
+  }
+  .innerNumber{
+    color: #ecf0f1;
+    text-align: center;
+    font-size: 2.4em;
+  }
+}
+
+.cardbtn{
+  padding-top: 5%;
+}
+.costoPromocion{
+  position: relative;
+  margin-top: -2em;
+}
+.innerNumber{
+  color: #ecf0f1;
+  text-align: center;
+  margin-top: -0.5em;
+  font-size: 2.4em;
+}
+
+#carrito{
+  margin-top: 0.5em;
+  width: 10%;
+}
+.titleCar{
+  margin-top: -3em;
+  margin-left: 1em;
+  width: 95%;
+  text-align: center;
+}
+
+#titleCost{
+  margin-left: 18em;
+  width: 15%
+}
+#titleCost h6{
+  font-weight: bold;
+}
+#cost{
+  margin-top: -2em;
+  margin-left: 23em;
+  width: 15%;
+}
+.note{
+  margin-bottom: 6em;
+}
+
+/*En esta seccion es el footer del carrito de compras*/
+.pill-footer-car{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  z-index: 1030;
+  background: #fff;
+}
+
+.pill-nav-car a {
+  margin-right: 10%;
+  display: inline-block;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+}
+/*Aquí acaba el carrito de compras*/
+
+.delete{
+  color: red;
+  margin-left: -2.5em;
+  margin-top: 1.2em;
+  z-index: 1030;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.add{
+  color: green;
+  margin-left: -0.7em;
+  margin-top: -0.2em;
+  z-index: 1030;
+  border-radius: 20px;
+  position: absolute;
+}

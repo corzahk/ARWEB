@@ -1,0 +1,166 @@
+#page1 {
+    overflow: hidden;
+    background: none;
+    height: 100%;
+}
+
+.overlayPickerInactive {
+    opacity: 0.5;
+}
+
+.overlayPickerInactive a:hover {
+    background: white;
+    border-color: white;
+    color: black;
+    text-shadow: none;
+}
+
+.overlayPickerInactive a:active {
+    background: white;
+    border-color: white;
+    color: black;
+    text-shadow: none;
+}
+
+.arkk{
+  border-radius: 50%;
+  margin-right: 0.3em;
+}
+
+.imgkk{
+  height: 3.5em !important;
+  width: 3em !important;
+}
+
+#rowInfo{
+  /*top: 6em;*/
+  position: absolute;
+  width: 100%;
+  /*height: 7em;*/
+  text-align: center;
+  background: black;
+}
+
+
+.rowMenu{
+  position:absolute;
+  bottom: 0.5em;
+  width: 100%;
+}
+
+.backbtn{
+  margin-bottom: -3.5em;
+  margin-left: 0.5em;
+}
+
+.carbtn{
+  margin-left: 24em;
+  margin-bottom: -3.5em;
+  width: 13%;
+  background: black;
+  border-radius: 50%;
+}
+.carbtn img{
+  width: 80%;
+}
+
+.ssbtn{
+  width: 15%;
+  margin-left: 13em;
+}
+
+.logoRest{
+  margin-left: 22em;
+  z-index: -10;
+  margin-top: -6em;
+  position: absolute;
+  width: 25%;
+}
+
+.logoRest img{
+  width: 60%;
+  border-radius: 60%;
+}
+
+.qualification{
+  margin-left: 12em;
+  margin-top: 35em;
+}
+
+#points {
+    text-align: center;
+    font-size: 100px;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    color: #E8D61B;
+}
+
+.pill-modal {
+    font-size: 26px;
+    border-radius: 20px !important;
+    background: green;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+#hideDesc{
+  margin-left: 12.5em;
+  margin-top: 8em;
+}
+
+#hideBtn{
+  margin-left: 13em;
+}
+
+#showBtn{
+  margin-left: 13em;
+  margin-top: -3.5em;
+}
+
+
+
+@media screen and (orientation: portrait) {
+
+    #overlayPicker {
+        display: inline-flex;
+        overflow-x: scroll;
+        width: 100%;
+        grid-auto-flow: column;
+        align-items: center;
+        background: black;
+    }
+
+    #overlayPicker a {
+        width: 100%;
+        right: 0.5%;
+    }
+
+    #overlayPicker a img {
+        width: 50px;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+
+    #overlayPicker {
+        width: 60%;
+        text-align: right;
+        position: absolute;
+        right: 0.5%;
+        bottom: 0.5%;
+    }
+
+    #overlayPicker a {
+        width: 20%;
+    }
+
+    #overlayPicker a img {
+        width: 100%;
+    }
+}
